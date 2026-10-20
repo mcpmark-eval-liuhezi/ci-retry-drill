@@ -1,0 +1,11 @@
+name: CI Retry Drill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always fail
+        run: exit 1
